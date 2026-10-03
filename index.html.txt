@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thesis The Maker | Official</title>
+  <style>
+    :root {
+      --bg: #0d0e11;
+      --card: #15181e;
+      --accent: #e53935;
+      --text: #eaeaea;
+      --muted: #8b949e;
+      --border: #2b313a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 680px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    header {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      box-shadow: 0 0 20px rgba(229, 57, 53, 0.25);
+    }
+    h1 { font-size: 1.75rem; letter-spacing: -0.5px; }
+    .location { font-size: 0.9rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+    .bio {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      font-size: 0.95rem;
+      color: #cfd6dd;
+    }
+    .links-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+    .btn {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 0.85rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.15s ease-in-out;
+    }
+    .btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .bandcamp-embed {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <img src="profile.jpg" alt="Artist Profile" class="avatar" />
+      <div>
+        <h1>Thesis The Maker</h1>
+        <p class="location">Downey, California</p>
+      </div>
+    </header>
+
+    <section class="bio">
+      <p>Producer from Downey, CA. Built on MPC chops, heavy low-end, and late-night drum programming. Crafting raw grooves, textured beats, and soundscapes from the ground up.</p>
+    </section>
+
+    <!-- Bandcamp Embedded Discography Player -->
+    <section class="bandcamp-embed">
+      <iframe style="border: 0; width: 100%; height: 120px;" 
+        src="https://bandcamp.com/EmbeddedPlayer/album=YOUR_ALBUM_ID/size=large/bgcol=15181e/linkcol=e53935/tracklist=false/artwork=small/transparent=true/" 
+        seamless>
+      </iframe>
+    </section>
+
+    <!-- Platform Links -->
+    <nav class="links-grid">
+      <a href="https://thesistm.bandcamp.com" class="btn" target="_blank">Bandcamp Discography</a>
+      <a href="#" class="btn" target="_blank">Spotify Catalog</a>
+      <a href="#" class="btn" target="_blank">Apple Music</a>
+      <a href="#" class="btn" target="_blank">SoundCloud</a>
+      <a href="mailto:contact@yourdomain.com" class="btn">Inquiries & Placements</a>
+    </nav>
+
+    <footer>
+      <p>&copy; 2026 Thesis The Maker. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
